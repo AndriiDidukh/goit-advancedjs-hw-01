@@ -1,18 +1,96 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+    margin: 0;
+    padding: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.container {
+    width: 1128px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+}
+
+.gallery-image:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.form-container {
+    display: grid;
+    max-width: 360px;
+    gap: 8px;
+    margin: 20px auto;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    color: #2e2f42;
+}
+
+.form-label {
+    display: grid;
+    gap: 8px;
+}
+
+.form-email {
+    height: 38px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.form-message {
+    height: 78px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.form-button {
+    width: 95px;
+    height: 40px;
+    margin-top: 8px;
+    color: #ffffff;
+    background-color: #4e75ff;
+    border-radius: 8px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+}
+
+.form-button:hover {
+    background-color: #6c8cff;
+}
+
+.form-email:hover,
+.form-message:hover {
+    border-color: #000000;
+}
+
+.form-email:active,
+.form-message:active {
+    border-color: #808080;
+}
